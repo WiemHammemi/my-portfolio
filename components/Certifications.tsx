@@ -46,7 +46,7 @@ const certifications: Certification[] = [
   },
   {
     id: "CCNA3",
-    image: "/images/CCNA3.png",
+    image: "/images/ccna3.png",
     date: "Déc 2024",
     title: "CCNA 3: Réseaux d'entreprise",
     icon: "fas fa-server",
