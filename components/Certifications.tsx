@@ -1,5 +1,4 @@
 
-
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -9,11 +8,11 @@ import { useLanguage } from "@/context/LanguageContext";
 interface Certification {
   id: string;
   image: string;
-  date: string;
-  title: string;
+  dateKey: string;
+  titleKey: string;
   icon: string;
-  source: string;
-  skills: string[];
+  sourceKey: string;
+  skillsKeys: string[];
   pdfUrl: string;
 }
 
@@ -23,65 +22,66 @@ interface Notification {
   type: "success" | "error";
 }
 
-const certifications: Certification[] = [
+// Données des certifications avec clés de traduction
+const certificationsData: Certification[] = [
   {
     id: "CCNA1",
     image: "/images/ccna1.png",
-    date: "Juin 2024",
-    title: "CCNA 1: Introduction aux réseaux",
+    dateKey: "cert1Date",
+    titleKey: "cert1Title",
     icon: "fas fa-network-wired",
-    source: "Cisco Networking Academy",
-    skills: ["Modèle OSI", "TCP/IP", "Adressage IP", "Ethernet"],
+    sourceKey: "cert1Source",
+    skillsKeys: ["cert1Skill1", "cert1Skill2", "cert1Skill3", "cert1Skill4"],
     pdfUrl: "/file/CCNA1.pdf",
   },
   {
     id: "CCNA2",
     image: "/images/ccna2.png",
-    date: "Sept 2024",
-    title: "CCNA 2: Commutation et routage",
+    dateKey: "cert2Date",
+    titleKey: "cert2Title",
     icon: "fas fa-route",
-    source: "Cisco Networking Academy",
-    skills: ["VLAN", "STP", "Routage statique", "RIP"],
+    sourceKey: "cert2Source",
+    skillsKeys: ["cert2Skill1", "cert2Skill2", "cert2Skill3", "cert2Skill4"],
     pdfUrl: "/file/CCNA2.pdf",
   },
   {
     id: "CCNA3",
     image: "/images/ccna3.png",
-    date: "Déc 2024",
-    title: "CCNA 3: Réseaux d'entreprise",
+    dateKey: "cert3Date",
+    titleKey: "cert3Title",
     icon: "fas fa-server",
-    source: "Cisco Networking Academy",
-    skills: ["OSPF", "EIGRP", "ACL", "NAT/PAT"],
+    sourceKey: "cert3Source",
+    skillsKeys: ["cert3Skill1", "cert3Skill2", "cert3Skill3", "cert3Skill4"],
     pdfUrl: "/file/CCNA3.pdf",
   },
   {
     id: "AWS_Cloud",
     image: "/images/aws_cloud.png",
-    date: "Mars 2024",
-    title: "Introduction au Cloud",
+    dateKey: "cert4Date",
+    titleKey: "cert4Title",
     icon: "fas fa-cloud",
-    source: "AWS Academy",
-    skills: ["EC2", "S3", "VPC", "IAM", "CloudWatch"],
+    sourceKey: "cert4Source",
+    skillsKeys: ["cert4Skill1", "cert4Skill2", "cert4Skill3", "cert4Skill4", "cert4Skill5"],
     pdfUrl: "/file/AWS_Cloud.pdf",
   },
   {
     id: "AWS_ML",
     image: "/images/aws_ml.png",
-    date: "Avril 2024",
-    title: "Fondements de ML",
+    dateKey: "cert5Date",
+    titleKey: "cert5Title",
     icon: "fas fa-brain",
-    source: "AWS Academy",
-    skills: ["SageMaker", "Deep Learning", "NLP", "Computer Vision"],
+    sourceKey: "cert5Source",
+    skillsKeys: ["cert5Skill1", "cert5Skill2", "cert5Skill3", "cert5Skill4"],
     pdfUrl: "/file/AWS_ML.pdf",
   },
   {
     id: "Angular",
     image: "/images/Angular.png",
-    date: "Jan 2024",
-    title: "Formation Angular - 24h",
+    dateKey: "cert6Date",
+    titleKey: "cert6Title",
     icon: "fab fa-angular",
-    source: "CrocoCoder Academy",
-    skills: ["Components", "Services", "Routing", "RxJS", "TypeScript"],
+    sourceKey: "cert6Source",
+    skillsKeys: ["cert6Skill1", "cert6Skill2", "cert6Skill3", "cert6Skill4", "cert6Skill5"],
     pdfUrl: "/file/Angular.pdf",
   },
 ];
@@ -90,7 +90,7 @@ export default function Certifications() {
   const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [notifications, setNotifications] = useState<Notification[]>([]);
-  const totalSlides = certifications.length;
+  const totalSlides = certificationsData.length;
  
   const [cardsPerView, setCardsPerView] = useState(3);
     
@@ -98,12 +98,7 @@ export default function Certifications() {
   const trackRef = useRef<HTMLDivElement>(null);
   const notificationIdRef = useRef(0);
 
-
-
   const maxSlideIndex = Math.max(0, totalSlides - cardsPerView + 2);
-
-
-  const cardWidthPercent = 100 / cardsPerView;
 
   const moveSlide = (direction: number) => {
     setCurrentSlide((prev) => {
@@ -117,6 +112,7 @@ export default function Certifications() {
   const goToSlide = (index: number) => {
     setCurrentSlide(Math.min(index, maxSlideIndex));
   };
+
   const showNotification = (message: string, type: "success" | "error") => {
     const id = notificationIdRef.current++;
     const newNotification: Notification = { id, message, type };
@@ -131,54 +127,54 @@ export default function Certifications() {
       const response = await fetch(cert.pdfUrl, { method: "HEAD" });
       if (response.ok) {
         window.open(cert.pdfUrl, "_blank");
-        showNotification(`Ouverture du certificat ${cert.title}...`, "success");
+        showNotification(t("certOpenSuccess").replace("{title}", t(cert.titleKey)), "success");
       } else {
-        showNotification(`Le certificat ${cert.id} n'est pas encore disponible.`, "error");
+        showNotification(t("certNotAvailable").replace("{id}", cert.id), "error");
       }
     } catch (error) {
       console.error("Erreur lors de la vérification du fichier:", error);
       window.open(cert.pdfUrl, "_blank");
-      showNotification(`Tentative d'ouverture du certificat ${cert.title}...`, "success");
+      showNotification(t("certOpenAttempt").replace("{title}", t(cert.titleKey)), "success");
     }
   };
 
- useEffect(() => {
-  const updateCardsPerView = () => {
-    if (window.innerWidth <= 768) {
-      setCardsPerView(1);
-    } else if (window.innerWidth <= 1024) {
-      setCardsPerView(2);
-    } else {
-      setCardsPerView(3);
+  useEffect(() => {
+    const updateCardsPerView = () => {
+      if (window.innerWidth <= 768) {
+        setCardsPerView(1);
+      } else if (window.innerWidth <= 1024) {
+        setCardsPerView(2);
+      } else {
+        setCardsPerView(3);
+      }
+    };
+
+    updateCardsPerView(); 
+    window.addEventListener('resize', updateCardsPerView); 
+
+    const startAutoPlay = () => {
+      stopAutoPlay();
+      intervalRef.current = setInterval(() => moveSlide(1), 5000);
+    };
+
+    const stopAutoPlay = () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+
+    startAutoPlay();
+    const wrapper = trackRef.current?.parentElement;
+    if (wrapper) {
+      wrapper.addEventListener("mouseenter", stopAutoPlay);
+      wrapper.addEventListener("mouseleave", startAutoPlay);
     }
-  };
 
-  updateCardsPerView(); 
-  window.addEventListener('resize', updateCardsPerView); 
-
-  const startAutoPlay = () => {
-    stopAutoPlay();
-    intervalRef.current = setInterval(() => moveSlide(1), 5000);
-  };
-
-  const stopAutoPlay = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-  };
-
-  startAutoPlay();
-  const wrapper = trackRef.current?.parentElement;
-  if (wrapper) {
-    wrapper.addEventListener("mouseenter", stopAutoPlay);
-    wrapper.addEventListener("mouseleave", startAutoPlay);
-  }
-
-  return () => {
-    stopAutoPlay();
-    window.removeEventListener('resize', updateCardsPerView); 
-    wrapper?.removeEventListener("mouseenter", stopAutoPlay);
-    wrapper?.removeEventListener("mouseleave", startAutoPlay);
-  };
-}, []);
+    return () => {
+      stopAutoPlay();
+      window.removeEventListener('resize', updateCardsPerView); 
+      wrapper?.removeEventListener("mouseenter", stopAutoPlay);
+      wrapper?.removeEventListener("mouseleave", startAutoPlay);
+    };
+  }, []);
 
   return (
     <section id="certifications" className="section">
@@ -192,26 +188,25 @@ export default function Certifications() {
             <FaChevronLeft />
           </button>
           <div className="cert-carousel-container">
-           <div
+            <div
               className="cert-carousel-track"
               ref={trackRef}
               style={{
-  transform: `translateX(-${(currentSlide * 100) / cardsPerView}%)`,
-}}
-
+                transform: `translateX(-${(currentSlide * 100) / cardsPerView}%)`,
+              }}
             >
-              {certifications.map((cert) => (
+              {certificationsData.map((cert) => (
                 <div className="card cert-card" key={cert.id}>
                   <div className="cert-image">
-                    <Image src={cert.image} alt={cert.title} width={300} height={200} />
+                    <Image src={cert.image} alt={t(cert.titleKey)} width={300} height={200} />
                     <div className="cert-date">
                       <i className="fas fa-calendar-alt" />
-                      <span>{cert.date}</span>
+                      <span>{t(cert.dateKey)}</span>
                     </div>
                     <button
                       className="cert-download"
                       onClick={() => downloadCertificate(cert)}
-                      title="Télécharger le certificat"
+                      title={t("downloadCertificate")}
                     >
                       <i className="fas fa-download" style={{ fontSize: "15px" }} />
                     </button>
@@ -219,11 +214,11 @@ export default function Certifications() {
                   <div className="cert-content">
                     <h3 className="cert-title">
                       <i className={cert.icon}></i>
-                      <span>{cert.title}</span>
+                      <span>{t(cert.titleKey)}</span>
                     </h3>
                     <div className="cert-source">
                       <FaBuilding />
-                      <span>{cert.source}</span>
+                      <span>{t(cert.sourceKey)}</span>
                     </div>
                     <div className="cert-skills">
                       <div className="cert-skills-label">
@@ -231,9 +226,9 @@ export default function Certifications() {
                         <span>{t("skillsAcquired")}</span>
                       </div>
                       <div className="cert-skills-list">
-                        {cert.skills.map((skill, i) => (
+                        {cert.skillsKeys.map((skillKey, i) => (
                           <span key={i} className="cert-skill-tag">
-                            {skill}
+                            {t(skillKey)}
                           </span>
                         ))}
                       </div>
@@ -250,7 +245,6 @@ export default function Certifications() {
       
         <div className="carousel-indicators">
           {Array.from({ length: maxSlideIndex + 1 }).map((_, index) => (
-
             <span
               key={index}
               className={`indicator ${index === currentSlide ? "active" : ""}`}

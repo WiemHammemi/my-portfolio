@@ -166,6 +166,69 @@ const translations: Record<Language, Record<string, string>> = {
     messageSent: "Votre message a été envoyé avec succès !",
 messageError: "Une erreur est survenue. Veuillez réessayer plus tard.",
 sending: "Envoi en cours...",
+
+  // Certifications
+  downloadCertificate: "Télécharger le certificat",
+  certOpenSuccess: "Ouverture du certificat {title}...",
+  certNotAvailable: "Le certificat {id} n'est pas encore disponible.",
+  certOpenAttempt: "Tentative d'ouverture du certificat {title}...",
+  
+  // CCNA 1
+  cert1Date: "Juin 2024",
+  cert1Title: "CCNA 1: Introduction aux réseaux",
+  cert1Source: "Cisco Networking Academy",
+  cert1Skill1: "Modèle OSI",
+  cert1Skill2: "TCP/IP",
+  cert1Skill3: "Adressage IP",
+  cert1Skill4: "Ethernet",
+  
+  // CCNA 2
+  cert2Date: "Sept 2024",
+  cert2Title: "CCNA 2: Commutation et routage",
+  cert2Source: "Cisco Networking Academy",
+  cert2Skill1: "VLAN",
+  cert2Skill2: "STP",
+  cert2Skill3: "Routage statique",
+  cert2Skill4: "RIP",
+  
+  // CCNA 3
+  cert3Date: "Déc 2024",
+  cert3Title: "CCNA 3: Réseaux d'entreprise",
+  cert3Source: "Cisco Networking Academy",
+  cert3Skill1: "OSPF",
+  cert3Skill2: "EIGRP",
+  cert3Skill3: "ACL",
+  cert3Skill4: "NAT/PAT",
+  
+  // AWS Cloud
+  cert4Date: "Mars 2024",
+  cert4Title: "Introduction au Cloud",
+  cert4Source: "AWS Academy",
+  cert4Skill1: "EC2",
+  cert4Skill2: "S3",
+  cert4Skill3: "VPC",
+  cert4Skill4: "IAM",
+  cert4Skill5: "CloudWatch",
+  
+  // AWS ML
+  cert5Date: "Avril 2024",
+  cert5Title: "Fondements de ML",
+  cert5Source: "AWS Academy",
+  cert5Skill1: "SageMaker",
+  cert5Skill2: "Deep Learning",
+  cert5Skill3: "NLP",
+  cert5Skill4: "Computer Vision",
+  
+  // Angular
+  cert6Date: "Jan 2024",
+  cert6Title: "Formation Angular - 24h",
+  cert6Source: "CrocoCoder Academy",
+  cert6Skill1: "Components",
+  cert6Skill2: "Services",
+  cert6Skill3: "Routing",
+  cert6Skill4: "RxJS",
+  cert6Skill5: "TypeScript",
+
   },
   en: {
     // Header
@@ -321,6 +384,68 @@ sending: "Envoi en cours...",
     messageSent: "Your message has been sent successfully!",
 messageError: "An error occurred. Please try again later.",
 sending: "Sending...",
+// Certifications
+  downloadCertificate: "Download certificate",
+  certOpenSuccess: "Opening certificate {title}...",
+  certNotAvailable: "Certificate {id} is not yet available.",
+  certOpenAttempt: "Attempting to open certificate {title}...",
+  
+  // CCNA 1
+  cert1Date: "June 2024",
+  cert1Title: "CCNA 1: Introduction to Networks",
+  cert1Source: "Cisco Networking Academy",
+  cert1Skill1: "OSI Model",
+  cert1Skill2: "TCP/IP",
+  cert1Skill3: "IP Addressing",
+  cert1Skill4: "Ethernet",
+  
+  // CCNA 2
+  cert2Date: "Sept 2024",
+  cert2Title: "CCNA 2: Switching and Routing",
+  cert2Source: "Cisco Networking Academy",
+  cert2Skill1: "VLAN",
+  cert2Skill2: "STP",
+  cert2Skill3: "Static Routing",
+  cert2Skill4: "RIP",
+  
+  // CCNA 3
+  cert3Date: "Dec 2024",
+  cert3Title: "CCNA 3: Enterprise Networks",
+  cert3Source: "Cisco Networking Academy",
+  cert3Skill1: "OSPF",
+  cert3Skill2: "EIGRP",
+  cert3Skill3: "ACL",
+  cert3Skill4: "NAT/PAT",
+  
+  // AWS Cloud
+  cert4Date: "March 2024",
+  cert4Title: "Introduction to Cloud",
+  cert4Source: "AWS Academy",
+  cert4Skill1: "EC2",
+  cert4Skill2: "S3",
+  cert4Skill3: "VPC",
+  cert4Skill4: "IAM",
+  cert4Skill5: "CloudWatch",
+  
+  // AWS ML
+  cert5Date: "April 2024",
+  cert5Title: "Machine Learning Foundations",
+  cert5Source: "AWS Academy",
+  cert5Skill1: "SageMaker",
+  cert5Skill2: "Deep Learning",
+  cert5Skill3: "NLP",
+  cert5Skill4: "Computer Vision",
+  
+  // Angular
+  cert6Date: "Jan 2024",
+  cert6Title: "Angular Training - 24h",
+  cert6Source: "CrocoCoder Academy",
+  cert6Skill1: "Components",
+  cert6Skill2: "Services",
+  cert6Skill3: "Routing",
+  cert6Skill4: "RxJS",
+  cert6Skill5: "TypeScript",
+
 
   },
   ar: {
@@ -477,6 +602,67 @@ sending: "Sending...",
     messageSent: "تم إرسال رسالتك بنجاح!",
 messageError: "حدث خطأ. يرجى المحاولة لاحقاً.",
 sending: "جارٍ الإرسال...",
+// Certifications
+  downloadCertificate: "تحميل الشهادة",
+  certOpenSuccess: "جارٍ فتح الشهادة {title}...",
+  certNotAvailable: "الشهادة {id} غير متوفرة بعد.",
+  certOpenAttempt: "محاولة فتح الشهادة {title}...",
+  
+  // CCNA 1
+  cert1Date: "جوان 2024",
+  cert1Title: "CCNA 1: مقدمة في الشبكات",
+  cert1Source: "أكاديمية سيسكو للشبكات",
+  cert1Skill1: "نموذج OSI",
+  cert1Skill2: "TCP/IP",
+  cert1Skill3: "عنونة IP",
+  cert1Skill4: "إيثرنت",
+  
+  // CCNA 2
+  cert2Date: "سبتمبر 2024",
+  cert2Title: "CCNA 2: التبديل والتوجيه",
+  cert2Source: "أكاديمية سيسكو للشبكات",
+  cert2Skill1: "VLAN",
+  cert2Skill2: "STP",
+  cert2Skill3: "التوجيه الثابت",
+  cert2Skill4: "RIP",
+  
+  // CCNA 3
+  cert3Date: "ديسمبر 2024",
+  cert3Title: "CCNA 3: شبكات المؤسسات",
+  cert3Source: "أكاديمية سيسكو للشبكات",
+  cert3Skill1: "OSPF",
+  cert3Skill2: "EIGRP",
+  cert3Skill3: "ACL",
+  cert3Skill4: "NAT/PAT",
+  
+  // AWS Cloud
+  cert4Date: "مارس 2024",
+  cert4Title: "مقدمة في السحابة",
+  cert4Source: "أكاديمية AWS",
+  cert4Skill1: "EC2",
+  cert4Skill2: "S3",
+  cert4Skill3: "VPC",
+  cert4Skill4: "IAM",
+  cert4Skill5: "CloudWatch",
+  
+  // AWS ML
+  cert5Date: "أبريل 2024",
+  cert5Title: "أساسيات التعلم الآلي",
+  cert5Source: "أكاديمية AWS",
+  cert5Skill1: "SageMaker",
+  cert5Skill2: "التعلم العميق",
+  cert5Skill3: "معالجة اللغة الطبيعية",
+  cert5Skill4: "رؤية الحاسوب",
+  
+  // Angular
+  cert6Date: "يناير 2024",
+  cert6Title: "تدريب Angular - 24 ساعة",
+  cert6Source: "أكاديمية CrocoCoder",
+  cert6Skill1: "المكونات",
+  cert6Skill2: "الخدمات",
+  cert6Skill3: "التوجيه",
+  cert6Skill4: "RxJS",
+  cert6Skill5: "TypeScript",
 
   },
 };
