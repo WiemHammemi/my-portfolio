@@ -23,7 +23,7 @@ useEffect(() => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/file/CV_Wiem_Hammami.pdf";
-    link.download = "Wiem_Hammami_CV.pdf";
+    link.download = "CV_Wiem_Hammami.pdf";
     link.click();
   };
 
