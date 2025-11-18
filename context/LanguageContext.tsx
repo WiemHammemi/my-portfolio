@@ -25,7 +25,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Hero
     engineerTitle: "Ingénieure Informatique",
-    heroDescription: "Diplômée en génie informatique de l'ENSIT, spécialisée en Nouvelles Technologies et Sécurité. Passionnée par le génie logiciel avec un focus sur le développement web et mobile.",
+    heroDescription: "Créatrice de solutions numériques modernes, alliant élégance technique et innovation. Je conçois et développe des applications centrées sur l’expérience utilisateur.",
     contactMe: "Me Contacter",
     viewProjects: "Voir Projets",
     
@@ -243,7 +243,7 @@ sending: "Envoi en cours...",
     
     // Hero
     engineerTitle: "Software Engineer",
-    heroDescription: "Computer Science Engineering graduate from ENSIT, specialized in New Technologies and Security. Passionate about software engineering with a particular focus on web and mobile development.",
+    heroDescription: "Builder of modern digital solutions, blending technical precision with creativity. I design and develop applications focused on seamless user experience.",
     contactMe: "Contact Me",
     viewProjects: "View Projects",
     
@@ -461,7 +461,7 @@ sending: "Sending...",
     
     // Hero
     engineerTitle: "مهندسة برمجيات",
-    heroDescription: "خريجة هندسة علوم الحاسوب من ENSIT، متخصصة في التقنيات الجديدة والأمان. شغوفة بهندسة البرمجيات مع التركيز على تطوير الويب والتطبيقات المحمولة.",
+    heroDescription: "أبتكر حلولًا رقمية عصرية تجمع بين الدقّة التقنية والإبداع. أصمّم وأطوّر تطبيقات بتركيز على تجربة المستخدم.",
     contactMe: "اتصل بي",
     viewProjects: "عرض المشاريع",
     
