@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -10,20 +9,29 @@ export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const [mounted, setMounted] = useState(false);
 
-useEffect(() => {
-  const id = requestAnimationFrame(() => setMounted(true));
-  return () => cancelAnimationFrame(id);
-}, []);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
-useEffect(() => {
-  const timer = requestAnimationFrame(() => setMounted(true));
-  return () => cancelAnimationFrame(timer);
-}, []);
+  useEffect(() => {
+    const timer = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(timer);
+  }, []);
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/file/CV_Wiem_Hammami.pdf";
-    link.download = "CV_Wiem_Hammami.pdf";
+    
+    // Choisir le fichier selon la langue
+    if (language === "fr") {
+      link.href = "/file/CV_Hammami_Wiem.pdf";
+      link.download = "CV_Hammami_Wiem.pdf";
+    } else {
+      // Pour anglais et arabe
+      link.href = "/file/CV_Wiem_Hammami.pdf";
+      link.download = "CV_Wiem_Hammami.pdf";
+    }
+    
     link.click();
   };
 
@@ -53,6 +61,7 @@ useEffect(() => {
           <button
             onClick={handleDownload}
             className="btn btn-primary flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+            title={language === "fr" ? "Télécharger CV_Hammami_Wiem.pdf" : "Download CV_Wiem_Hammami.pdf"}
           >
             <i className="fas fa-download"></i>
             <span>{t("downloadCV")}</span>
@@ -62,7 +71,6 @@ useEffect(() => {
           <button
             onClick={toggleTheme}
             className="btn btn-control px-3 py-2 rounded-md border hover:bg-gray-100"
-            // title={`Changer vers le thème ${theme === "light" ? "sombre" : "clair"}`}
           >
             {!mounted ? (
               <div className="w-5 h-5 bg-gray-200 rounded animate-pulse"></div>
