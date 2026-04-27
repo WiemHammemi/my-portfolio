@@ -32,7 +32,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About
     aboutMe: "À propos de moi",
     profile: "Profil",
-    profileDesc: "Diplômée en génie informatique, spécialité Nouvelles Technologies et Sécurité, je possède une formation solide couvrant les systèmes informatiques, les réseaux et le développement logiciel. Mon parcours académique et mes expériences pratiques m’ont permis d’acquérir une vision globale des systèmes d’information, allant de la conception des applications à la compréhension des enjeux de performance et de fiabilité. Sérieuse, rigoureuse et motivée, je m’appuie sur mes compétences techniques pour apporter une contribution concrète aux projets informatiques.",
+    profileDesc: "Ingénieure en informatique, passionnée par la création de solides solutions logicielles et le développement d'applications performantes. Diplômée en génie informatique, je possède des compétences en développement full stack (front-end & back-end). Motivée par l'acquisition continue de nouvelles compétences, je m'efforce de concevoir des applications de qualité, robustes et centrées sur l'expérience utilisateur.",
     training: "Formation",
     languages: "Langues",
     associativeLife: "Vie Associative",
@@ -148,7 +148,11 @@ const translations: Record<Language, Record<string, string>> = {
     exp3Feature3: "Formulaire de demande de devis dynamique",
     exp3Feature4: "Présentation claire des services et produits",
     
-    // Certifications
+    // Experience 4 - Next CONSULT
+    exp4Date: "Décembre 2025 - Présent",
+    exp4Title: "Next CONSULT - Développeur Full Stack",
+    exp4Subtitle: "Développeur Full Stack",
+    exp4Desc: "En tant que développeur full stack, je contribue à la création et à l’évolution d’applications web à forte valeur ajoutée, en intervenant sur l’ensemble du cycle de développement (front-end & back-end). Mon objectif est de concevoir des solutions performantes et évolutives qui améliorent l’expérience utilisateur, optimisent les processus métiers et répondent efficacement aux besoins des clients. Je collabore étroitement avec les équipes produit et métier afin de transformer les besoins fonctionnels en solutions concrètes, fiables et alignées avec les objectifs business. Exemples de projets : <a href='https://yoursoap.tn/' target='_blank'>plateforme e-commerce</a> et <a href='https://kaisse.tn/' target='_blank'>application Kaisse</a>.",
     certifications: "Certifications",
     skillsAcquired: "Compétences acquises",
     
@@ -250,7 +254,7 @@ sending: "Envoi en cours...",
     // About
     aboutMe: "About Me",
     profile: "Profile",
-    profileDesc: "Graduated in Computer Engineering, specialized in New Technologies and Security, I have a solid academic background covering computer systems, networks, and software development. My academic journey and practical experiences have enabled me to acquire a comprehensive understanding of information systems, ranging from application design to performance and reliability considerations. Serious, rigorous, and motivated, I rely on my technical skills to make a concrete contribution to IT projects.",
+    profileDesc: "Computer Engineering graduate, passionate about creating robust software solutions and developing high-performance applications. I have skills in full-stack development (front-end & back-end). Motivated by continuous skill acquisition, I strive to design quality, robust applications focused on user experience.",
     training: "Education",
     languages: "Languages",
     associativeLife: "Associative Life",
@@ -366,7 +370,11 @@ sending: "Envoi en cours...",
     exp3Feature3: "Dynamic quote request form",
     exp3Feature4: "Clear presentation of services and products",
     
-    // Certifications
+    // Experience 4 - Next CONSULT
+    exp4Date: "December 2025 - Present",
+    exp4Title: "Next CONSULT - Full Stack Developer",
+    exp4Subtitle: "Full Stack Developer",
+    exp4Desc: "As a full stack developer, I contribute to the creation and evolution of high-value web applications, intervening in the entire development cycle (front-end & back-end). My goal is to design performant and scalable solutions that improve user experience, optimize business processes and effectively meet client needs. I work closely with product and business teams to transform functional needs into concrete, reliable solutions aligned with business objectives. Examples of projects: <a href='https://yoursoap.tn/' target='_blank'>e-commerce platform</a> and <a href='https://kaisse.tn/' target='_blank'>Kaisse application</a>.",
     certifications: "Certifications",
     skillsAcquired: "Skills Acquired",
     
@@ -468,7 +476,7 @@ sending: "Sending...",
     // About
     aboutMe: "حولي",
     profile: "الملف الشخصي",
-    profileDesc:"حاصلة على شهادة في هندسة الحاسوب، اختصاص التقنيات الحديثة والأمن، أمتلك تكوينًا متينًا يشمل أنظمة الحاسوب، الشبكات، وتطوير البرمجيات. مكّنني مساري الأكاديمي وتجربتي العملية من اكتساب رؤية شاملة لأنظمة المعلومات، تمتد من تصميم التطبيقات إلى فهم متطلبات الأداء والموثوقية. أتميز بالجدية والانضباط والدافعية، وأعتمد على كفاءاتي التقنية لتقديم مساهمة فعلية في المشاريع المعلوماتية.",
+    profileDesc: "مهندسة حاسوب، شغوفة بإنشاء حلول برمجية قوية وتطوير تطبيقات عالية الأداء. حاصلة على شهادة في هندسة الحاسوب، أمتلك مهارات في التطوير الكامل (الواجهة الأمامية والخلفية). مدفوعة باكتساب المهارات المستمر، أسعى لتصميم تطبيقات عالية الجودة، قوية ومركزة على تجربة المستخدم.",
     training: "التعليم",
     languages: "اللغات",
     associativeLife: "الحياة الجمعوية",
@@ -584,7 +592,11 @@ sending: "Sending...",
     exp3Feature3: "نموذج طلب عرض أسعار ديناميكي",
     exp3Feature4: "عرض واضح للخدمات والمنتجات",
     
-    // Certifications
+    // Experience 4 - Next CONSULT
+    exp4Date: "ديسمبر 2025 - الحاضر",
+    exp4Title: "Next CONSULT - مطور Full Stack",
+    exp4Subtitle: "مطور Full Stack",
+    exp4Desc: "كمطور full stack، أساهم في إنشاء وتطوير تطبيقات الويب ذات القيمة العالية، بالتدخل في جميع مراحل التطوير (الواجهة الأمامية والخلفية). هدفي هو تصميم حلول فعالة وقابلة للتوسع تحسن تجربة المستخدم، تحسن العمليات التجارية وتلبي احتياجات العملاء بفعالية. أتعاون عن كثب مع فرق المنتج والأعمال لتحويل الاحتياجات الوظيفية إلى حلول ملموسة وموثوقة ومتوافقة مع الأهداف التجارية. أمثلة على المشاريع: <a href='https://yoursoap.tn/' target='_blank'>منصة التجارة الإلكترونية</a> و <a href='https://kaisse.tn/' target='_blank'>تطبيق Kaisse</a>.",
     certifications: "الشهادات",
     skillsAcquired: "المهارات المكتسبة",
     

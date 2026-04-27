@@ -87,6 +87,9 @@ export default function Skills() {
               <span className="skill-tag">
                 <i className="fab fa-php tech-icon tech-php"></i>PHP
               </span>
+              <span className="skill-tag">
+                <i className="fab fa-laravel tech-icon" style={{ color: "#FF2D20" }}></i>Laravel
+              </span>
             </div>
           </div>
 
@@ -127,6 +130,9 @@ export default function Skills() {
               </span>
               <span className="skill-tag">
                 <i className="fas fa-database tech-icon"></i>NoSQL
+              </span>
+              <span className="skill-tag">
+                <i className="fas fa-database tech-icon" style={{ color: "#336791" }}></i>PostgreSQL
               </span>
             </div>
           </div>

@@ -36,7 +36,6 @@ export default function About() {
                   <div className="timeline-date">{t("edu1Date")}</div>
                   <h4 className="timeline-title">{t("edu1Title")}</h4>
                   <div className="timeline-company">{t("edu1School")}</div>
-                  <p>{t("edu1Spec")}</p>
                 </div>
                 <div className="timeline-item">
                   <div className="timeline-date">{t("edu2Date")}</div>

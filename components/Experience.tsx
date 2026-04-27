@@ -13,6 +13,14 @@ export default function Experience() {
 
   const experiences = [
     {
+      dateKey: "exp4Date",
+      titleKey: "exp4Title",
+      subtitleKey: "exp4Subtitle",
+      descKey: "exp4Desc",
+      icon: "fas fa-building",
+      tools: ["Next.js", "Laravel", "Node.js", "MongoDB", "PostgreSQL"],
+    },
+    {
       dateKey: "exp1Date",
       titleKey: "exp1Title",
       subtitleKey: "exp1Subtitle",
@@ -104,7 +112,7 @@ export default function Experience() {
                 >
                   <div className="exp-main-desc">
                     <i className="fas fa-info-circle"></i>
-                    <p>{t(exp.descKey)}</p>
+                    <p dangerouslySetInnerHTML={{ __html: t(exp.descKey) }} />
                   </div>
                   {exp.miniProjects && (
                     <div className="exp-sub-projects">
