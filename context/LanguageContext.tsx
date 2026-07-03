@@ -148,9 +148,9 @@ const translations: Record<Language, Record<string, string>> = {
     exp3Feature3: "Formulaire de demande de devis dynamique",
     exp3Feature4: "Présentation claire des services et produits",
     
-    // Experience 4 - Next CONSULT
+    // Experience 4 - Next
     exp4Date: "Décembre 2025 - Présent",
-    exp4Title: "Next CONSULT - Développeur Full Stack",
+    exp4Title: "Next  - Développeur Full Stack",
     exp4Subtitle: "Développeur Full Stack",
     exp4Desc: "En tant que développeur full stack, je contribue à la création et à l'évolution d'applications web à forte valeur ajoutée, en intervenant sur l'ensemble du cycle de développement (front-end & back-end). Mon objectif est de concevoir des solutions performantes et évolutives qui améliorent l'expérience utilisateur, optimisent les processus métiers et répondent efficacement aux besoins des clients. Je collabore étroitement avec les équipes produit et métier afin de transformer les besoins fonctionnels en solutions concrètes, fiables et alignées avec les objectifs business. Exemples de projets : <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>plateforme e-commerce : YourSoap </a> , <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>application Kaisse</a>...",
     certifications: "Certifications",
@@ -370,9 +370,9 @@ sending: "Envoi en cours...",
     exp3Feature3: "Dynamic quote request form",
     exp3Feature4: "Clear presentation of services and products",
     
-    // Experience 4 - Next CONSULT
+    // Experience 4 - Next
     exp4Date: "December 2025 - Present",
-    exp4Title: "Next CONSULT - Full Stack Developer",
+    exp4Title: "Next - Full Stack Developer",
     exp4Subtitle: "Full Stack Developer",
     exp4Desc: "As a full stack developer, I contribute to the creation and evolution of high-value web applications, intervening in the entire development cycle (front-end & back-end). My goal is to design performant and scalable solutions that improve user experience, optimize business processes and effectively meet client needs. I work closely with product and business teams to transform functional needs into concrete, reliable solutions aligned with business objectives. Examples of projects: <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>e-commerce platform</a> and <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse application</a>.",
     certifications: "Certifications",
@@ -592,9 +592,9 @@ sending: "Sending...",
     exp3Feature3: "نموذج طلب عرض أسعار ديناميكي",
     exp3Feature4: "عرض واضح للخدمات والمنتجات",
     
-    // Experience 4 - Next CONSULT
+    // Experience 4 - Next
     exp4Date: "ديسمبر 2025 - الحاضر",
-    exp4Title: "Next CONSULT - مطور Full Stack",
+    exp4Title: "Next - مطور Full Stack",
     exp4Subtitle: "مطور Full Stack",
     exp4Desc: "كمطور full stack، أساهم في إنشاء وتطوير تطبيقات الويب ذات القيمة العالية، بالتدخل في جميع مراحل التطوير (الواجهة الأمامية والخلفية). هدفي هو تصميم حلول فعالة وقابلة للتوسع تحسن تجربة المستخدم، تحسن العمليات التجارية وتلبي احتياجات العملاء بفعالية. أتعاون عن كثب مع فرق المنتج والأعمال لتحويل الاحتياجات الوظيفية إلى حلول ملموسة وموثوقة ومتوافقة مع الأهداف التجارية. أمثلة على المشاريع: <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>منصة التجارة الإلكترونية</a> و <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>تطبيق Kaisse</a>.",
     certifications: "الشهادات",
