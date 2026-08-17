@@ -24,11 +24,11 @@ export default function Header() {
     
     // Choisir le fichier selon la langue
     if (language === "fr") {
-      link.href = "/file/CV_Hammami_Wiem.pdf";
+      link.href = "/file/CV_Hammami_Wiem_FR.pdf";
       link.download = "CV_Hammami_Wiem.pdf";
     } else {
       // Pour anglais et arabe
-      link.href = "/file/CV_Wiem_Hammami.pdf";
+      link.href = "/file/CV_Wiem_Hammami_EN.pdf";
       link.download = "CV_Wiem_Hammami.pdf";
     }
     
