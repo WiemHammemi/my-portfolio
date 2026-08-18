@@ -131,6 +131,10 @@ const translations: Record<Language, Record<string, string>> = {
     proj12Date: "Juin 2026 – Présent",
     proj12Desc: "Développement freelance d'une solution e-commerce complète réunissant un site vitrine, un front office de vente et un back office de gestion. Le projet intègre le catalogue, les commandes, l'administration des contenus et un paiement en ligne sécurisé via Stripe, avec une infrastructure hébergée sur OVH.",
     exp4DescriptionUpdated: "En tant que développeur full-stack chez Next, je participe à la conception, au développement et à l'évolution de produits web adaptés aux besoins métiers. J'interviens sur des interfaces performantes et responsives, des API REST et la modélisation des données, en collaboration avec les équipes produit et techniques. Mes réalisations couvrent notamment <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>YouSoap</a>, <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse</a>, <a href='https://humanlink.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>HumanLink</a>, Amaway et Bien, avec Next.js, Node.js, MongoDB, PostgreSQL, Prisma, Python et Postman.",
+    exp5Date: "Mai 2026 – Présent",
+    exp5Title: "Alimexia — Développeur Full-Stack Freelance",
+    exp5Subtitle: "Mission freelance",
+    exp5Desc: "Développement et évolution d'<a href='https://alimexia.com/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Alimexia</a>, une solution e-commerce complète combinant un site vitrine, un front office de vente et un back office de gestion. J'ai mis en place la gestion du catalogue, des commandes et des contenus, ainsi que l'intégration du paiement en ligne sécurisé avec Stripe et l'hébergement sur OVH. Je suis également en charge de la maintenance continue de la plateforme : corrections, optimisations, mises à jour et évolutions fonctionnelles.",
     
     // Experience
     seeDetails: "Voir les détails",
@@ -363,6 +367,10 @@ sending: "Envoi en cours...",
     proj11Title: "Bien — Fixed-asset management ERP", proj11Date: "Project delivered at Next", proj11Desc: "Back-end and REST API development for an ERP solution managing fixed assets and inventories.",
     proj12Title: "Alimexia — E-commerce solution", proj12Date: "June 2026 – Present", proj12Desc: "Freelance development of an end-to-end e-commerce solution combining a showcase website, storefront, management back office and secure Stripe payments, hosted on OVH.",
     exp4DescriptionUpdated: "As a full-stack developer at Next, I design, develop and evolve web products tailored to business needs. I contribute to responsive interfaces, REST APIs and data modeling alongside product and technical teams. My work includes <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>YouSoap</a>, <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse</a>, <a href='https://humanlink.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>HumanLink</a>, Amaway and Bien, using Next.js, Node.js, MongoDB, PostgreSQL, Prisma, Python and Postman.",
+    exp5Date: "May 2026 – Present",
+    exp5Title: "Alimexia — Freelance Full-Stack Developer",
+    exp5Subtitle: "Freelance engagement",
+    exp5Desc: "Development and evolution of <a href='https://alimexia.com/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Alimexia</a>, a complete e-commerce solution combining a showcase website, storefront and management back office. The work includes catalog, order and content management, secure Stripe payments and OVH hosting. I am also responsible for ongoing maintenance: fixes, optimizations, updates and functional improvements.",
     
     // Experience
     seeDetails: "View details",

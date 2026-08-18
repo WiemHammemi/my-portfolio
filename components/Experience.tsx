@@ -13,6 +13,14 @@ export default function Experience() {
 
   const experiences = [
     {
+      dateKey: "exp5Date",
+      titleKey: "exp5Title",
+      subtitleKey: "exp5Subtitle",
+      descKey: "exp5Desc",
+      icon: "fas fa-laptop-code",
+      tools: ["Next.js", "Node.js", "MongoDB", "Stripe", "OVH"],
+    },
+    {
       dateKey: "exp4Date",
       titleKey: "exp4Title",
       subtitleKey: "exp4Subtitle",
