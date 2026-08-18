@@ -18,7 +18,7 @@ export default function Experience() {
       subtitleKey: "exp4Subtitle",
       descKey: "exp4DescriptionUpdated",
       icon: "fas fa-building",
-      tools: ["Next.js", "Laravel", "Node.js", "MongoDB", "PostgreSQL"],
+      tools: ["Next.js", "Laravel", "Node.js", "MongoDB", "PostgreSQL", "Prisma"],
     },
     {
       dateKey: "exp1Date",

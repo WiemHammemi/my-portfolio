@@ -103,9 +103,6 @@ export default function Skills() {
               <span className="skill-tag">
                 <i className="fas fa-mobile-alt tech-icon tech-flutter"></i>Flutter
               </span>
-              <span className="skill-tag">
-                <i className="fas fa-mobile-alt tech-icon tech-ionic"></i>Ionic
-              </span>
             </div>
           </div>
 
@@ -133,6 +130,9 @@ export default function Skills() {
               </span>
               <span className="skill-tag">
                 <i className="fas fa-database tech-icon" style={{ color: "#336791" }}></i>PostgreSQL
+              </span>
+              <span className="skill-tag">
+                <i className="fas fa-database tech-icon" style={{ color: "#2D3748" }}></i>Prisma
               </span>
             </div>
           </div>
