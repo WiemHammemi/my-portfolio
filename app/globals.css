@@ -2447,6 +2447,22 @@
         line-height: 1.2;
       }
 
+      .project-badge {
+        display: inline-flex;
+        width: fit-content;
+        margin-bottom: 0.35rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 999px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        color: white;
+        background: var(--accent-color);
+      }
+
+      .project-badge.projectFreelance { background: #8b5cf6; }
+      .project-badge.projectCompany { background: #0f766e; }
+      .project-badge.projectAcademic { background: #2563eb; }
+
       .project-date {
         font-size: 0.75rem; /* réduit de 0.8rem */
         color: var(--accent-color);

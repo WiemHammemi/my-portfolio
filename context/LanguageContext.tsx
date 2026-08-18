@@ -79,6 +79,9 @@ const translations: Record<Language, Record<string, string>> = {
     seeLess: "Voir moins",
     seeMoreProjects: "Voir plus de projets",
     seeLessProjects: "Voir moins de projets",
+    projectAcademic: "Projet académique",
+    projectCompany: "Projet d'entreprise",
+    projectFreelance: "Projet freelance",
     
     // Project 1
     proj1Title: "Casque IoT Intelligent",
@@ -109,6 +112,25 @@ const translations: Record<Language, Record<string, string>> = {
     proj6Title: "Système de Gestion de Cabinet d'Avocats",
     proj6Date: "Janvier - Avril 2023",
     proj6Desc: "Application web moderne pour la gestion des clients, dossiers, rendez-vous et facturation dans un cabinet d'avocats.",
+    proj7Title: "YouSoap — Plateforme e-commerce",
+    proj7Date: "Projet réalisé chez Next",
+    proj7Desc: "Développement full-stack d'une plateforme e-commerce avec front office et back office complets, couvrant la gestion du catalogue, des produits et des parcours administratifs.",
+    proj8Title: "Kaisse — Site vitrine & e-commerce",
+    proj8Date: "Projet réalisé chez Next",
+    proj8Desc: "Conception d'un site vitrine et e-commerce destiné à présenter et commercialiser l'application mobile de point de vente Kaisse, avec une expérience de navigation claire et responsive.",
+    proj9Title: "HumanLink — Plateforme de recrutement",
+    proj9Date: "Projet réalisé chez Next",
+    proj9Desc: "Développement des interfaces front-end d'une plateforme de recrutement, afin de fluidifier l'accès aux offres, aux profils candidats et aux services destinés aux entreprises.",
+    proj10Title: "Amaway — Gestion pour agences de voyages",
+    proj10Date: "Projet réalisé chez Next",
+    proj10Desc: "Développement full-stack d'une application web sécurisée centralisant les interactions entre les agences de voyages partenaires et Amadeus Tunisie.",
+    proj11Title: "Bien — ERP de gestion des immobilisations",
+    proj11Date: "Projet réalisé chez Next",
+    proj11Desc: "Développement du back-end et des API REST d'une solution ERP dédiée au suivi des immobilisations, des inventaires et des opérations métier associées.",
+    proj12Title: "Alimexia — Solution e-commerce",
+    proj12Date: "Juin 2026 – Présent",
+    proj12Desc: "Développement freelance d'une solution e-commerce complète réunissant un site vitrine, un front office de vente et un back office de gestion. Le projet intègre le catalogue, les commandes, l'administration des contenus et un paiement en ligne sécurisé via Stripe, avec une infrastructure hébergée sur OVH.",
+    exp4DescriptionUpdated: "En tant que développeur full-stack chez Next, je participe à la conception, au développement et à l'évolution de produits web adaptés aux besoins métiers. J'interviens sur des interfaces performantes et responsives, des API REST et la modélisation des données, en collaboration avec les équipes produit et techniques. Mes réalisations couvrent notamment <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>YouSoap</a>, <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse</a>, <a href='https://humanlink.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>HumanLink</a>, Amaway et Bien, avec Next.js, Node.js, MongoDB, PostgreSQL, Prisma, Python et Postman.",
     
     // Experience
     seeDetails: "Voir les détails",
@@ -301,6 +323,9 @@ sending: "Envoi en cours...",
     seeLess: "See less",
     seeMoreProjects: "See more projects",
     seeLessProjects: "See less projects",
+    projectAcademic: "Academic project",
+    projectCompany: "Company project",
+    projectFreelance: "Freelance project",
     
     // Project 1
     proj1Title: "Smart IoT Helmet",
@@ -331,6 +356,13 @@ sending: "Envoi en cours...",
     proj6Title: "Law Firm Management System",
     proj6Date: "January - April 2023",
     proj6Desc: "Modern web application for managing clients, cases, appointments and billing in a law firm.",
+    proj7Title: "YouSoap — E-commerce platform", proj7Date: "Project delivered at Next", proj7Desc: "Full-stack development of an e-commerce platform with complete customer-facing and administration areas.",
+    proj8Title: "Kaisse — Showcase & e-commerce website", proj8Date: "Project delivered at Next", proj8Desc: "Showcase and e-commerce website presenting and selling the Kaisse point-of-sale mobile application.",
+    proj9Title: "HumanLink — Recruitment platform", proj9Date: "Project delivered at Next", proj9Desc: "Front-end development for a recruitment platform supporting job seekers and companies.",
+    proj10Title: "Amaway — Travel-agency management", proj10Date: "Project delivered at Next", proj10Desc: "Secure full-stack web application centralizing interactions between partner travel agencies and Amadeus Tunisia.",
+    proj11Title: "Bien — Fixed-asset management ERP", proj11Date: "Project delivered at Next", proj11Desc: "Back-end and REST API development for an ERP solution managing fixed assets and inventories.",
+    proj12Title: "Alimexia — E-commerce solution", proj12Date: "June 2026 – Present", proj12Desc: "Freelance development of an end-to-end e-commerce solution combining a showcase website, storefront, management back office and secure Stripe payments, hosted on OVH.",
+    exp4DescriptionUpdated: "As a full-stack developer at Next, I design, develop and evolve web products tailored to business needs. I contribute to responsive interfaces, REST APIs and data modeling alongside product and technical teams. My work includes <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>YouSoap</a>, <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse</a>, <a href='https://humanlink.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>HumanLink</a>, Amaway and Bien, using Next.js, Node.js, MongoDB, PostgreSQL, Prisma, Python and Postman.",
     
     // Experience
     seeDetails: "View details",
@@ -702,7 +734,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, [language]);
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    return translations[language][key] || translations.fr[key] || key;
   };
 
   const setLanguage = (lang: Language) => {
