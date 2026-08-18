@@ -149,7 +149,7 @@ const translations: Record<Language, Record<string, string>> = {
     exp3Feature4: "Présentation claire des services et produits",
     
     // Experience 4 - Next
-    exp4Date: "Décembre 2025 - Présent",
+    exp4Date: "Décembre 2025 - Août 2026",
     exp4Title: "Next  - Développeur Full Stack",
     exp4Subtitle: "Développeur Full Stack",
     exp4Desc: "En tant que développeur full stack, je contribue à la création et à l'évolution d'applications web à forte valeur ajoutée, en intervenant sur l'ensemble du cycle de développement (front-end & back-end). Mon objectif est de concevoir des solutions performantes et évolutives qui améliorent l'expérience utilisateur, optimisent les processus métiers et répondent efficacement aux besoins des clients. Je collabore étroitement avec les équipes produit et métier afin de transformer les besoins fonctionnels en solutions concrètes, fiables et alignées avec les objectifs business. Exemples de projets : <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>plateforme e-commerce : YourSoap </a> , <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>application Kaisse</a>...",
@@ -371,7 +371,7 @@ sending: "Envoi en cours...",
     exp3Feature4: "Clear presentation of services and products",
     
     // Experience 4 - Next
-    exp4Date: "December 2025 - Present",
+    exp4Date: "December 2025 - August 2026",
     exp4Title: "Next - Full Stack Developer",
     exp4Subtitle: "Full Stack Developer",
     exp4Desc: "As a full stack developer, I contribute to the creation and evolution of high-value web applications, intervening in the entire development cycle (front-end & back-end). My goal is to design performant and scalable solutions that improve user experience, optimize business processes and effectively meet client needs. I work closely with product and business teams to transform functional needs into concrete, reliable solutions aligned with business objectives. Examples of projects: <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>e-commerce platform</a> and <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>Kaisse application</a>.",
