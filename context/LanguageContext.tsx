@@ -593,7 +593,7 @@ sending: "Sending...",
     exp3Feature4: "عرض واضح للخدمات والمنتجات",
     
     // Experience 4 - Next
-    exp4Date: "ديسمبر 2025 - الحاضر",
+    exp4Date: " 2026 ديسمبر 2025 - أغسطس",
     exp4Title: "Next - مطور Full Stack",
     exp4Subtitle: "مطور Full Stack",
     exp4Desc: "كمطور full stack، أساهم في إنشاء وتطوير تطبيقات الويب ذات القيمة العالية، بالتدخل في جميع مراحل التطوير (الواجهة الأمامية والخلفية). هدفي هو تصميم حلول فعالة وقابلة للتوسع تحسن تجربة المستخدم، تحسن العمليات التجارية وتلبي احتياجات العملاء بفعالية. أتعاون عن كثب مع فرق المنتج والأعمال لتحويل الاحتياجات الوظيفية إلى حلول ملموسة وموثوقة ومتوافقة مع الأهداف التجارية. أمثلة على المشاريع: <a href='https://yoursoap.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>منصة التجارة الإلكترونية</a> و <a href='https://kaisse.tn/' target='_blank' style='color: #0052D4; text-decoration: underline; font-weight: bold;'>تطبيق Kaisse</a>.",
