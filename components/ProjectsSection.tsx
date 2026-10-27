@@ -77,6 +77,10 @@ export default function ProjectsSection() {
       typeKey: "projectAcademic",
     },
     {
+      titleKey: "proj13Title", dateKey: "proj13Date", descKey: "proj13Desc", image: "/images/ordercare.png", link: "https://ordercare.tn",
+      tech: ["Next.js"], typeKey: "projectFreelance",
+    },
+    {
       titleKey: "proj12Title", dateKey: "proj12Date", descKey: "proj12Desc", image: "/images/alimexia.png", link: "https://alimexia.com/",
       tech: ["Next.js", "MongoDB", "Node.js", "OVH", "Stripe"], typeKey: "projectFreelance",
     },
